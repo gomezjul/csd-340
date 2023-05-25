@@ -1,2 +1,4 @@
-# csd-340
-2237-DD
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Matthew Longley
+* Julian Gomez Jr
