@@ -24,7 +24,7 @@ h3 {
   
 }
 
-<!-- I took the code up to portrait from here: https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio -->
+/* I took the code up to portrait from here: https://stackoverflow.com/questions/3029422/how-to-auto-resize-an-image-while-maintaining-aspect-ratio */
 img {
     max-width: 50%;
     max-height: 50%;
