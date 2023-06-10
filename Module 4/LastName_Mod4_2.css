@@ -7,15 +7,6 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: rgba(0, 0, 255, 0.8);
-  font-size: 24px;
-}
-
-h3 {
-  color: rgba(255, 0, 0, 0.8);
-}
-
 #image-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -42,5 +33,4 @@ figure {
 figcaption {
   font-style: italic;
   font-size: 0.75em;
-  color: rgba(0, 255, 0, 0.8);
 }
