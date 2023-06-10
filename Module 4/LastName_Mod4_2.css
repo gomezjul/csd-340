@@ -29,6 +29,11 @@ img {
     max-height: 100%;
 }
 
+.portrait {
+    height: 80px;
+    width: 30px;
+}
+
 figure {
   text-align: center;
 }
