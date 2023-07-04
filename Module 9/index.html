@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<!--
+    Professor Sue Sampson
+    Assignment 9.3
+-->
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var firstVariableValue = "great";
+        var secondVariableValue = "Edwin";
+        var thirdVariableValue = "Lincoln";
+        var fourthVariableValue = "seashells";
+
+        function replaceText(spanId, newText) {
+            document.getElementById(spanId).innerHTML = newText;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="title">Assignment 9.3: JavaScript - Part 1</h1>
+
+    <p>I enjoy history, I watch and read about it as often as I can. It can go back to the time of the dinasours up until the second world war. I have heard many <span id="great">_________</span> and interesting stories but have always carried two with me that I like to share with others.</p>
+    <p>There are a few versions to this story that happened between 1862-1864. A famour actor named <span id="Edwin">_________</span> was waiting to buy a train ticket along with a large crowd. During the commotion, a young man named Robert slipped and was nearly crushed between the heavy cars. Fortunately Edwin saw this and reached out to grab him by the coat. The kid Robert was shocked to see this famous actor <span id="Edwin">_________</span> Booth who saved him. What's interesting about this is that the kid who was saved by John Wilke's older brother was Robert <span id="Lincoln">_________</span>, Abraham <span id="Lincoln">_________</span> son!</p>
+    <p>Sometime in the early 1800s, a girl, her brother, and her dad would look for fossils to sell to tourists. Her dad passed away, leaving the family behind, and the mom was sad and worried about their finances. The girl Mary and her brother Joseph were well aware of where these fossils were, so they took over. One day, the girl Mary found the first complete ichthyosaur fossil, which she sold. Although many people might not know Mary Anning by name, they do know of her and don't even know it because of the famous tongue twister below is about her.</p>
+
+    <p>"She sells <span id="seashells">_________</span> on the seashore, The shells she sells are <span id="seashells">_________</span>, I'm sure, For if she sells <span id="seashells">_________</span> on the seashore, Then I'm sure she sells sea shore shells.".</p>
+
+ <br><br>
+
+    <button onclick="replaceText('great', firstVariableValue)">Replace 'great'</button>
+    <button onclick="replaceText('Edwin', secondVariableValue)">Replace 'Edwin'</button>
+    <button onclick="replaceText('Lincoln', thirdVariableValue)">Replace 'Lincoln'</button>
+    <button onclick="replaceText('seashells', fourthVariableValue)">Replace 'seashells'</button>
+
+    <br><br>
+
+    <a href="9.3.html">Visit my favorites
