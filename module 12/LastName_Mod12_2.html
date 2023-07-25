@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="LastName_Mod3_3.css">
+</head>
+<body>
+    <div id="container">
+        <h1 style="text-align: center;">Assignment 12.2: JavaScript - Part 4</h1>
+        <div style="width: 45%; display: inline-block;">
+            <h3>Top 10 Favorite Books</h3>
+            <ol id="bookList">
+                <li>Lord of the Rings - The Fellowship of the Ring</li>
+                <li>Lord of the Rings - The Two Towers</li>
+                <li>Lord of the Rings - The Return of the King</li>
+                <li>My Inventions: The Autobiography of Nikola Tesla</li>
+                <li>Æsop's Fables</li>
+                <li>Lincoln by David H. Donald</li>
+                <li>No other books - in my small collection</li>
+                <li>No other books - in my small collection</li>
+                <li>No other books - in my small collection</li>
+                <li>No other books - in my small collection, I need to read more!</li>
+            </ol>
+            <button onclick="sortAscending()">Top to Bottom</button>
+            <button onclick="sortDescending()">Bottom to Top</button>
+        </div>
+        <div style="width: 45%; display: inline-block;">
+            <h3>5 Things I've Learned Since the Course Started</h3>
+            <ul>
+                <li>HTML is not as difficult as I thought.</li>
+                <li>HTML is the foundation of the website, CSS is the cosmetics the neighbors see.</li>
+                <li>Designing the webpage, in my opinion, is the most important step.</li>
+                <li>The little things like font size, type, and color are not so little! They matter and keep the attention of the user.</li>
+                <li>Links to URLs outside of your webpage require the full address, while links on your webpage do not.</li>
+            </ul>
+        </div>
+        <div style="width: 100%; margin-top: 60%;">
+            <a href="../index.html" style="float: right;">Back to Landing Page</a>
+        </div>
+    </div>
+
+    <script>
+        function sortAscending() {
+            const bookList = document.getElementById('bookList');
+            const books = Array.from(bookList.getElementsByTagName('li')).map(li => li.textContent);
+            books.sort();
+            bookList.innerHTML = '';
+            books.forEach(book => {
+                const li = document.createElement('li');
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+
+        function sortDescending() {
+            const bookList = document.getElementById('bookList');
+            const books = Array.from(bookList.getElementsByTagName('li')).map(li => li.textContent);
+            books.sort((a, b) => b.localeCompare(a));
+            bookList.innerHTML = '';
+            books.forEach(book => {
+                const li = document.createElement('li');
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
